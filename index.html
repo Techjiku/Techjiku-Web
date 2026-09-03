@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techjiku | Robotics, Automation & IoT Studio</title>
+  <meta
+    name="description"
+    content="Techjiku builds robotics, automation, IoT products, custom fabrication, and 3D prints."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-a" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-b" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Techjiku home">
+      <img src="assets/images/tj.png" alt="Techjiku logo" class="brand-mark" />
+      <span class="brand-copy">
+        <strong>Techjiku</strong>
+        <small>Robotics | Automation | IoT</small>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <button class="ghost-button" id="openContacts" type="button">Contacts</button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.5 15.1A8.5 8.5 0 0 1 8.9 3.5 8.5 8.5 0 1 0 20.5 15.1Z" />
+        </svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <h1>Minimal, practical tech for real-world automation.</h1>
+        <p class="lede">
+          Techjiku designs robotics, automation, and IoT products with custom fabrication and
+          3D printing support. Co-founded by Jai and Gulshan.
+        </p>
+
+        <div class="hero-actions">
+          <a class="primary-button" href="#contact-form">Send a Query</a>
+          <button class="secondary-button" type="button" id="openContactsSecondary">View Contacts</button>
+        </div>
+
+        <div class="hero-stats">
+          <article>
+            <strong>3</strong>
+            <span>Core domains</span>
+          </article>
+          <article>
+            <strong>9</strong>
+            <span>Featured projects</span>
+          </article>
+          <article>
+            <strong>24/7</strong>
+            <span>Collab-friendly support</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal">
+        <div class="hero-panel-frame">
+          <div class="hero-panel-tag">Techjiku Portfolio</div>
+          <img src="assets/images/project-1.jpg" alt="Featured Techjiku project" class="hero-image" />
+        </div>
+        <div class="hero-panel-meta">
+          <p>Product development, prototypes, and custom fabrication for practical deployment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-tight">
+      <div class="section-head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>Small, sharp teams for ambitious builds.</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <h3>Robotics</h3>
+          <p>Autonomous platforms, control systems, chassis design, and field-ready robot builds.</p>
+        </article>
+        <article class="service-card reveal">
+          <h3>Automation</h3>
+          <p>Smart monitoring, process automation, dashboards, sensors, and control logic.</p>
+        </article>
+        <article class="service-card reveal">
+          <h3>IoT & Fabrication</h3>
+          <p>Connected hardware, enclosure design, prototyping, and custom 3D printed parts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Portfolio</span>
+        <h2>Featured builds and product concepts.</h2>
+        <p>
+          Edit the names and short descriptions in <code>script.js</code> whenever you want to rename
+          a project.
+        </p>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="contact-card reveal" id="contact-form">
+        <div class="contact-copy">
+          <span class="eyebrow">Collaborate</span>
+          <h2>Send a direct inquiry from the website.</h2>
+          <p>
+            Fill in your name and contact details, choose a topic, add a description. Your message will go to the official Techjiku email through
+            Web3Forms.
+          </p>
+          <div class="quick-links">
+            <a href="mailto:jikutech@gmail.com">Email</a>
+            <a href="https://github.com/Techjiku" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.instagram.com/techjiku/" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="tel:9416383219">Call</a>
+          </div>
+        </div>
+
+        <form class="inquiry-form" id="inquiryForm">
+          <input type="hidden" name="access_key" value="4f5cc05d-da10-4b0d-b348-a8572564bd82" />
+          <input type="hidden" name="subject" value="New Techjiku inquiry" />
+          <input type="hidden" name="from_name" value="Techjiku Website" />
+
+          <label>
+            <span>Name *</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            <span>Contact details *</span>
+            <input
+              type="text"
+              name="contact_details"
+              placeholder="Email or phone number"
+              required
+            />
+          </label>
+
+          <label>
+            <span>Topic</span>
+            <input type="text" name="topic" placeholder="Project idea, collaboration, quote..." />
+          </label>
+
+          <label>
+            <span>Description</span>
+            <textarea
+              name="description"
+              rows="5"
+              placeholder="Tell us what you want to build."
+            ></textarea>
+          </label>
+
+          
+
+          <button class="primary-button" type="submit">Send Query</button>
+          <p class="form-note">
+            Need a faster reply? Include a phone number in the contact field and we will reach out.
+          </p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <aside class="contacts-drawer" id="contactsDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div>
+        <span class="eyebrow">Contacts</span>
+        <h2>Reach Techjiku</h2>
+      </div>
+      <button class="icon-button" type="button" id="closeContacts" aria-label="Close contacts">
+        &times;
+      </button>
+    </div>
+
+    <div class="drawer-list">
+      <a href="mailto:jikutech@gmail.com">
+        <span>Email</span>
+        <strong>jikutech@gmail.com</strong>
+      </a>
+      <a href="https://github.com/Techjiku" target="_blank" rel="noreferrer">
+        <span>GitHub</span>
+        <strong>github.com/Techjiku</strong>
+      </a>
+      <a href="https://www.instagram.com/techjiku/" target="_blank" rel="noreferrer">
+        <span>Instagram</span>
+        <strong>@techjiku</strong>
+      </a>
+      <a href="tel:9416383219">
+        <span>Phone</span>
+        <strong>9416383219</strong>
+      </a>
+      <div>
+        <span>Location</span>
+        <strong>CDLU Sirsa</strong>
+      </div>
+      <div>
+        <span>Founders</span>
+        <strong>Jai and Gulshan</strong>
+      </div>
+    </div>
+  </aside>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
